@@ -2,7 +2,6 @@ import {FaHome} from 'react-icons/fa'
 import {BiUser} from 'react-icons/bi'
 import{RiLogoutBoxLine} from 'react-icons/ri'
 import {RiBookletLine} from 'react-icons/ri'
-import Home from './index'
 
 const Homepage=()=>{
     return(

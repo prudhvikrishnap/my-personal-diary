@@ -34,6 +34,7 @@ export default function Home() {
       </div>
       <p className='text-gray-400 my-3'>or use your email</p>
         <div className='flex flex-col items-center'>
+          <form action='/api/login' method='post'>
           <div className='bg-gray-100 w-64 p-2 flex items-center mb-3'>
             <AiOutlineMail className='text-gray-400 m-2 fill-green-500'/>
             <input type="text" name='email' placeholder='Email ID' className='bg-gray-100 outline-none text-sm flex-1'></input>
@@ -50,10 +51,9 @@ export default function Home() {
             <input type="checkbox" name="remember" className='mr-1 accent-green-500'/> Remember Me </label>
             <a href='#' className='text-xs'>Forgot Password?</a>
         </div>
-        <a href="/home" className='border-2 border-green-500 rounded-full px-9 py-2 inline-block font-semibold bg-gray-100
-        hover:bg-green-500 hover:text-white'>
-          Sign In
-        </a>
+        <input type='submit' value='Login' className='border-2 border-green-500 rounded-full px-9 py-2 inline-block font-semibold bg-gray-100
+        hover:bg-green-500 hover:text-white'/>
+        </form>
         </div>
         </div>
       </div>

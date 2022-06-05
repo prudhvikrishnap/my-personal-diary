@@ -22,33 +22,35 @@ const Login=()=> {
                         </ul>
                     </div> 
             </div>
-
             <div className="w-3/5 m-2 flex flex-col items-center">
-                    <div className="flex items-center p-2 mb-2">
+            <form id='reg-user' action='/api/register' method='post'>
+                    <div className="flex items-center p-2 mb-2">   
                         <AiOutlineUser className='mr-2'/>
-                        <input type='text' name='name' placeholder='Name' className="flex1 accent-green-500 outline-none"/>
+                        <input type='text' name='name' placeholder='Name' autoComplete='false' className="flex1 accent-green-500 outline-none"/>
                     </div>
                     <div className="flex  items-center p-2 mb-2">
                         <IoMailOutline className='mr-2'/>
-                        <input type='text' name='email' placeholder='Enter Valid Email' className="flex1 accent-green-500 outline-none"/>
+                        <input type='text' name='email' placeholder='Enter Valid Email' autoComplete='false' className="flex1 accent-green-500 outline-none"/>
                     </div>
                     <div className="flex items-center p-2 mb-4">
                         <RiKeyLine className='mr-2'/>
-                        <input type='password' name='password' placeholder='Password' className="flex1 accent-green-500 outline-none"/>
+                        <input type='password' name='password' placeholder='Password' autoComplete='false' className="flex1 accent-green-500 outline-none"/>
                     </div>
                     <div className='border-2 border-green-500  px-2 py-2 inline-block font-semibold
-        hover:bg-green-500 hover:text-white text-sm mb-3 rounded border-b-4 items-center'>
-                        <input type='submit' value='Create Account'  className='center'></input>
-                    </div>
+        hover:bg-green-500 hover:text-white text-sm mb-3 rounded border-b-4 items-center justify-center'>
+                        <input type='submit' value='Create Account'/>
+                </div>
+                </form>
                 <div className='mb-3 text-center'>
                     <h4 className='flex text-xs'>Already have an account?</h4>
                 <a href='/' className='text-xs border-2 border-green-500 px-2 py-1 inline-block font-semibold
         hover:bg-green-500 hover:text-white mt-2 border-b-4 rounded'>Login</a>
                 </div>
-            </div>
-        </div>
+            </div> 
+          
+        </div> 
     </div>
-    )
+    )             
 }
 
 export default Login
